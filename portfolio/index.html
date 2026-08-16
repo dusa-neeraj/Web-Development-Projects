@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dusa Neeraj | Aspiring Software Developer</title>
+<meta name="description" content="Portfolio of Dusa Neeraj — Aspiring Software Developer building projects with Python, DSA, and Web Development." />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<!-- Font Awesome (icons only, CDN, no other frameworks) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================================================
+       PRELOADER
+       Shown while the page first loads, hidden by script.js
+  ======================================================= -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-name">DN</div>
+  </div>
+
+  <!-- Floating background shapes (purely decorative, aria-hidden) -->
+  <div class="bg-shapes" aria-hidden="true">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <!-- ======================================================
+       NAVBAR
+  ======================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Neeraj<span class="dot">.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       HERO SECTION
+  ======================================================= -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+
+      <p class="hero-eyebrow reveal">Aspiring Software Developer</p>
+
+      <h1 class="hero-name">
+        <span class="reveal-line"><span class="reveal-word">DUSA</span></span>
+        <span class="reveal-line"><span class="reveal-word">NEERAJ</span></span>
+      </h1>
+
+      <div class="hero-photo-wrap reveal">
+        <img src="profile.jpg" alt="Dusa Neeraj" class="hero-photo" loading="eager" />
+        <span class="photo-badge">Hyderabad, IN</span>
+      </div>
+
+      <p class="hero-typing reveal">
+        <span id="typingText"></span><span class="typing-cursor">|</span>
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-dark">View Projects</a>
+        <a href="resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">View Resume</a>
+
+      <div class="hero-socials reveal">
+        <a href="https://github.com/dusa-neeraj" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:neerajdusa19@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ======================================================
+       ABOUT SECTION
+  ======================================================= -->
+  <section id="about" class="section">
+    <p class="section-eyebrow reveal">About</p>
+    <h2 class="section-title reveal">Who I Am</h2>
+
+    <div class="about-grid">
+      <p class="about-text reveal">
+        I'm Dusa Neeraj, a Computer Science Engineering student at Malla Reddy
+        Deemed to be University, Hyderabad — currently in my 3rd semester and
+        working towards becoming a Software Development Engineer. I learn by
+        building: Python programs, data-driven scripts, and clean, functional
+        web pages like this one. Consistent practice, curiosity, and a
+        problem-solving mindset are what drive my growth every day.
+      </p>
+
+      <div class="stats-grid reveal">
+        <div class="stat-card glass">
+          <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Coding Platforms</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-label">Years of Learning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       SKILLS SECTION
+  ======================================================= -->
+  <section id="skills" class="section section-alt">
+    <p class="section-eyebrow reveal">Skills</p>
+    <h2 class="section-title reveal">What I Work With</h2>
+
+    <div class="skills-layout">
+
+      <!-- Animated progress bars for core skills -->
+      <div class="progress-list reveal">
+        <div class="progress-item">
+          <div class="progress-top"><span>Python</span><span>85%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-width="85"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-top"><span>HTML &amp; CSS</span><span>80%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-width="80"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-top"><span>JavaScript</span><span>40%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-width="40"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-top"><span>Data Structures &amp; Algorithms</span><span>35%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-width="35"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-top"><span>NumPy &amp; Pandas</span><span>70%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-width="70"></div></div>
+        </div>
+      </div>
+
+      <!-- Skill chips -->
+      <div class="chips-wrap reveal">
+        <h3 class="chips-heading">Tools &amp; Technologies</h3>
+        <div class="chips">
+          <span class="chip"><i class="fa-solid fa-code"></i> VS Code</span>
+          <span class="chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+          <span class="chip"><i class="fa-brands fa-github"></i> GitHub</span>
+          <span class="chip"><i class="fa-solid fa-book"></i> Jupyter Notebook</span>
+          <span class="chip"><i class="fa-brands fa-google"></i> Google Colab</span>
+        </div>
+
+        <h3 class="chips-heading">Soft Skills</h3>
+        <div class="chips">
+          <span class="chip">Problem Solving</span>
+          <span class="chip">Quick Learner</span>
+          <span class="chip">Communication</span>
+          <span class="chip">Teamwork</span>
+          <span class="chip">Consistency</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coding Profiles -->
+    <div class="profiles-grid reveal">
+      <a href="https://leetcode.com/u/Neeraj_Dusa/" target="_blank" rel="noopener" class="profile-card glass">
+        <i class="fa-solid fa-code profile-icon"></i>
+        <span class="profile-name">LeetCode</span>
+        <span class="profile-note">Practising Two Pointers</span>
+      </a>
+      <a href="https://www.hackerrank.com/profile/dusaneeraj" target="_blank" rel="noopener" class="profile-card glass">
+        <i class="fa-solid fa-terminal profile-icon"></i>
+        <span class="profile-name">HackerRank</span>
+        <span class="profile-note">Python (Basic) Certified</span>
+      </a>
+      <a href="https://www.geeksforgeeks.org/profile/dusaneeraj" target="_blank" rel="noopener" class="profile-card glass">
+        <i class="fa-solid fa-laptop-code profile-icon"></i>
+        <span class="profile-name">GeeksforGeeks</span>
+        <span class="profile-note">Learning DSA Step by Step</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       PROJECTS SECTION
+  ======================================================= -->
+  <section id="projects" class="section">
+    <p class="section-eyebrow reveal">Projects</p>
+    <h2 class="section-title reveal">Featured Work</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          <img src="project-1.jpg" alt="Number Guessing Game project thumbnail" loading="lazy" />
+          <div class="project-overlay">
+            <a href="https://github.com/dusa-neeraj/number-guessing-game" target="_blank" rel="noopener" class="overlay-btn" aria-label="View code on GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <span class="overlay-btn overlay-btn-disabled" title="No live demo for console apps">
+              <i class="fa-solid fa-play"></i>
+            </span>
+          </div>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Console Project</span>
+          <h3>Number Guessing Game</h3>
+          <p>A Python console game with difficulty levels, hints, and input validation.</p>
+          <div class="project-tags">
+            <span>Python</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          <img src="project-2.jpg" alt="ATM Banking System project thumbnail" loading="lazy" />
+          <div class="project-overlay">
+            <a href="https://github.com/dusa-neeraj/ATM-Banking-System" target="_blank" rel="noopener" class="overlay-btn" aria-label="View code on GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <span class="overlay-btn overlay-btn-disabled" title="No live demo for console apps">
+              <i class="fa-solid fa-play"></i>
+            </span>
+          </div>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Simulation Project</span>
+          <h3>ATM Banking System</h3>
+          <p>A basic banking/ATM simulation built using Python functions and file handling.</p>
+          <div class="project-tags">
+            <span>Python</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       EDUCATION TIMELINE
+  ======================================================= -->
+  <section id="education" class="section section-alt">
+    <p class="section-eyebrow reveal">Education</p>
+    <h2 class="section-title reveal">Academic Journey</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass">
+          <span class="timeline-date">2024 &mdash; Present</span>
+          <h3>B.Tech, Computer Science Engineering</h3>
+          <p>Malla Reddy Deemed to be University, Hyderabad</p>
+          <span class="timeline-status">Currently in 3rd Semester</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CERTIFICATIONS
+  ======================================================= -->
+  <section id="certifications" class="section">
+    <p class="section-eyebrow reveal">Certifications</p>
+    <h2 class="section-title reveal">Courses &amp; Certifications</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card glass reveal">
+        <i class="fa-solid fa-certificate cert-icon"></i>
+        <span class="cert-badge">Certified</span>
+        <h3>Python Programming</h3>
+        <p>Foundational course covering core Python concepts and syntax.</p>
+      </div>
+      <div class="cert-card glass reveal">
+        <i class="fa-solid fa-certificate cert-icon"></i>
+        <span class="cert-badge">Completed</span>
+        <h3>NumPy</h3>
+        <p>Arrays, indexing, broadcasting, and numerical computing basics.</p>
+      </div>
+      <div class="cert-card glass reveal">
+        <i class="fa-solid fa-certificate cert-icon"></i>
+        <span class="cert-badge">Completed</span>
+        <h3>Pandas</h3>
+        <p>Data cleaning, analysis, and manipulation using DataFrames.</p>
+      </div>
+      <div class="cert-card glass reveal">
+        <i class="fa-solid fa-certificate cert-icon"></i>
+        <span class="cert-badge">Certified</span>
+        <h3>Data Science For Everyone</h3>
+        <p>Reliance Foundation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       EXPERIENCE (placeholder for future internships)
+  ======================================================= -->
+  <section id="experience" class="section section-alt">
+    <p class="section-eyebrow reveal">Experience</p>
+    <h2 class="section-title reveal">Work Experience</h2>
+
+    <div class="empty-state reveal glass">
+      <i class="fa-solid fa-briefcase empty-icon"></i>
+      <h3>No internships yet — but I'm actively looking!</h3>
+      <p>This section will be updated as soon as I begin my first internship or professional role. For now, all my learning shows up in the Projects and Certifications above.</p>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CONTACT SECTION
+  ======================================================= -->
+  <section id="contact" class="section contact-section">
+    <p class="section-eyebrow reveal">Contact</p>
+    <h2 class="section-title reveal">Let's Connect</h2>
+
+    <div class="contact-layout">
+
+      <div class="contact-info reveal">
+        <div class="contact-info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Hyderabad, Telangana, India</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <span class="contact-label">Email</span>
+            <a href="mailto:neerajdusa19@gmail.com" class="contact-value">neerajdusa19@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <i class="fa-brands fa-github"></i>
+          <div>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/dusa-neeraj" target="_blank" rel="noopener" class="contact-value">dusa-neeraj</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Front-end only form: validated by script.js, does not send anywhere yet -->
+      <form id="contactForm" class="contact-form reveal glass" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" />
+          <span class="form-error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+          <span class="form-error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message..."></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn-dark form-submit">Send Message</button>
+        <p class="form-success" id="formSuccess">Thanks! Your message looks good — I'll add real email sending once I learn backend/JS integrations.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#home" class="nav-logo">Neeraj<span class="dot">.</span></a>
+      <div class="footer-socials">
+        <a href="https://github.com/dusa-neeraj" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:neerajdusa19@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p>&copy; <span id="year"></span> Dusa Neeraj. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
