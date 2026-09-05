@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Now</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <div class="app">
+
+    <header>
+      <div class="logo">🌤️ Weather Now</div>
+      <button id="themeToggle" class="theme-toggle" title="Toggle theme">🌙</button>
+    </header>
+
+    <div class="search-row">
+      <input type="text" id="cityInput" placeholder="Search city...">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <button id="locationBtn" class="location-btn">📍 Use My Location</button>
+
+    <p id="message"></p>
+
+    <div class="weather-card" id="weatherCard" style="display:none;">
+      <div class="current-top">
+        <div>
+          <h2 id="cityName"></h2>
+          <p id="dateNow" class="date"></p>
+        </div>
+        <div class="icon-big" id="iconBig"></div>
+      </div>
+
+      <div class="temp-row">
+        <h1 id="temp"></h1>
+        <p id="condition"></p>
+      </div>
+
+      <div class="details">
+        <div class="detail-box">
+          <span>💧 Humidity</span>
+          <p id="humidity"></p>
+        </div>
+        <div class="detail-box">
+          <span>💨 Wind</span>
+          <p id="wind"></p>
+        </div>
+        <div class="detail-box">
+          <span>🌡️ Feels Like</span>
+          <p id="feelsLike"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hourly-section" id="hourlySection" style="display:none;">
+      <p class="section-title">Hourly Forecast</p>
+      <div class="chart-wrap">
+        <canvas id="hourlyChart"></canvas>
+      </div>
+    </div>
+
+    <div class="forecast" id="forecast"></div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
