@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Finance Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Personal Finance Analyzer</h1>
+
+    <!-- Income -->
+    <div>
+        <label for="income">Monthly Income:</label>
+        <input type="number" id="income" placeholder="Enter income">
+    </div>
+
+    <br>
+
+    <!-- Expense -->
+    <div>
+        <label for="expense">Expense Amount:</label>
+        <input type="number" id="expense" placeholder="Enter expense">
+    </div>
+
+    <br>
+
+    <!-- Category -->
+    <div>
+        <label for="category">Expense Category:</label>
+        <input type="text" id="category" placeholder="Food, Travel, etc.">
+    </div>
+
+    <br>
+
+    <button id="addExpense">Add Expense</button>
+
+    <hr>
+
+    <h2>Expenses</h2>
+
+    <div id="expenseList">
+        <!-- Expenses will appear here -->
+    </div>
+
+    <hr>
+
+    <h2>Analysis</h2>
+
+    <p>Total Expense: ₹<span id="totalExpense">0</span></p>
+
+    <p>Savings: ₹<span id="savings">0</span></p>
+
+    <p>Highest Expense: <span id="highestExpense">0</span></p>
+
+    <p>Lowest Expense: <span id="lowestExpense">0</span></p>
+
+    <p>Average Expense: ₹<span id="averageExpense">0</span></p>
+
+    <p>Status: <span id="status">-</span></p>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
